@@ -246,7 +246,7 @@ function renderMain(table) {
                 "h4",
                 ['class="ui horizontal divider header"'], item
             );
-            const notionCard = (imgurl, url, name) =>
+            const notionCard = (imgurl, url, name = "暂无名称", desc = "暂无描述") =>
                 el(
                     "a",
                     ['class="card"', `href=${url}`, 'target="_blank"'],
@@ -271,7 +271,7 @@ function renderMain(table) {
                             ""
                         ) +
                         el("div", ['class="header"'], name || "暂无名称") +
-                        el("div", ['class=""'], '')
+                        el("div", ['class="meta"'], desc)
                     )
                 );
 
@@ -280,7 +280,7 @@ function renderMain(table) {
                 ['class="ui four stackable cards"'],
                 arrTable
                     .filter(it => it.Tags[0] === item)
-                    .map((link) => notionCard(link.imgurl, link.url, link.Name))
+                    .map((link) => notionCard(link.imgurl, link.url, link.Name, link.desc))
                     .join("")
             );
 
@@ -291,8 +291,6 @@ function renderMain(table) {
 
     return el('main', [], el('div', ['class="ui container"'], dividerTable));
 }
-
-
 
 function renderHTML(index, seller) {
     return `
