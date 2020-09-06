@@ -14,7 +14,7 @@ header {
 }
 
 #head {
-  background-image: "https://sh-1258129568.cos.ap-shanghai.myqcloud.com/img/p_da0747_m_da07475.svg";
+  background: url(https://sh-1258129568.cos.ap-shanghai.myqcloud.com/img/p_da0747_m_da07475.svg);
 }
 
 #nav .item {
