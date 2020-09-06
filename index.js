@@ -4,7 +4,7 @@
 const config = {
     title: "UUUI 导航", //write your website title
     subtitle: "搜索你想知道的 UI 项目", //write your website subtitle
-    logo_icon: "safari", //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
+    logo_icon: "", //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
     hitokoto: false, //use hitokoto or not
     search: true, //enable search function
     search_engine: [
@@ -301,7 +301,7 @@ function renderHTML(index, seller) {
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
               <title>${config.title} - ${config.subtitle}</title>
               <link href="https://cdn.jsdelivr.net/npm/semantic-ui-css@2.4.1/semantic.min.css" rel="stylesheet">
-                <link href="https://cdn.jsdelivr.net/gh/STANAPO/CF-Nav@master/style.css" rel="stylesheet">
+                <link href="https://cdn.jsdelivr.net/gh/STANAPO/CF-Nav@0.2/style.css" rel="stylesheet">
                   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
                   <script src="https://cdn.jsdelivr.net/npm/semantic-ui-css@2.4.1/semantic.min.js"></script>
   </head>
